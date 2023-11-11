@@ -1,7 +1,7 @@
 <template>
     <div class="bg-gray-200">
         <TextHeader />
-        <div class="grid grid-cols-3 p-40 grid-rows-4 gap-11">
+        <div class="grid grid-cols-3 p-40 grid-rows-4 gap-12">
             <CardApp v-for="(item, index) in cardData" :key="index" :images="item.images" :childText="item.textFromParent"
                 :SummerVibes="item.SummerVibes" :WasAmount="item.WasAmount" />
         </div>
