@@ -8,6 +8,7 @@ export default {
           textFromParent: "Niggaz know i'm him!",
           SummerVibes: "Get your summer on",
           WasAmount: "R325",
+          prices: "R261",
           image: [
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b867683071443.5d30b5ec8ac5a.jpg",
           ],
@@ -17,6 +18,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "Be on fire with the works",
           WasAmount: "R150",
+          prices: "R261",
           image: ["https://i.ibb.co/VWm1hxS/Screenshot-2023-09-11-124656.png"],
         },
         {
@@ -24,6 +26,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "does it happy does it not happy",
           WasAmount: "R150",
+          prices: "R261",
           image: [
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b867683071443.5d30b5ec8ac5a.jpg",
           ],
@@ -33,6 +36,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "made it from the impossible",
           WasAmount: "R150",
+          prices: "R261",
           image: ["https://i.ibb.co/VWm1hxS/Screenshot-2023-09-11-124656.png"],
         },
         {
@@ -40,6 +44,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "be willing to learn and grow",
           WasAmount: "R150",
+          prices: "R261",
           image: [
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b867683071443.5d30b5ec8ac5a.jpg",
           ],
@@ -49,6 +54,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "the summer is us ",
           WasAmount: "R150",
+          prices: "R261",
           image: ["https://i.ibb.co/VWm1hxS/Screenshot-2023-09-11-124656.png"],
         },
         {
@@ -56,6 +62,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "the lies never end",
           WasAmount: "R150",
+          prices: "R261",
           image: [
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b867683071443.5d30b5ec8ac5a.jpg",
           ],
@@ -65,6 +72,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "be kind to each other",
           WasAmount: "R150",
+          prices: "R261",
           image: ["https://i.ibb.co/VWm1hxS/Screenshot-2023-09-11-124656.png"],
         },
         {
@@ -72,6 +80,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "The grace of God ",
           WasAmount: "R150",
+          prices: "R261",
           image: [
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b867683071443.5d30b5ec8ac5a.jpg",
           ],
@@ -81,6 +90,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "art is what makes sense to you",
           WasAmount: "R150",
+          prices: "R261",
           image: ["https://i.ibb.co/VWm1hxS/Screenshot-2023-09-11-124656.png"],
         },
         {
@@ -88,6 +98,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "levels that are on other levels",
           WasAmount: "R150",
+          prices: "R261",
           image: [
             "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8b867683071443.5d30b5ec8ac5a.jpg",
           ],
@@ -97,6 +108,7 @@ export default {
           textFromParent: "know they mad at me!",
           SummerVibes: "taking over the city this summer",
           WasAmount: "R150",
+          prices: "R261",
           image: ["https://i.ibb.co/VWm1hxS/Screenshot-2023-09-11-124656.png"],
         },
 

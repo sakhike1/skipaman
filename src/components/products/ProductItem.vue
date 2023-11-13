@@ -1,15 +1,18 @@
 <template>
     <div class="centered-component">
         <div v-motion-slide-visible-once-top>
-            <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <div class="product__image">
-                    <img :src="image" :alt="title" />
+            <div class="max-w-sm rounded   overflow-hidden shadow-lg">
+                <div class="bg-black">
+
+                    <div class="nakhoke"> <!-- Change the background color class here -->
+                        <img :src="image" :alt="title" />
+                    </div>
                 </div>
                 <div class="px-6 py-4 bg-gradient-to-r from-rose-100 to-teal-100">
                     <div class="font-bold text-[14px] text-left mb-2">{{ SummerVibes }}</div>
                     <div class="text-left text-xs">
-                        <span class="line-through">{{ WasAmount }}</span>
-                        <span class="text-green-400">R261.75</span><br />
+                        <span class="line-through text-black mr-5">{{ WasAmount }}</span>
+                        <span class="text-green-400">{{ prices }}</span><br />
                         25% OFF
                     </div>
                     <p class="text-gray-700 text-left text-xs">
@@ -44,9 +47,16 @@ export default {
         MessageComponent,
 
     },
-    props: ['id', 'image', 'WasAmount', 'SummerVibes', 'textFromParent'],
+    props: ['id', 'image', 'WasAmount', 'SummerVibes', 'textFromParent', 'prices', 'qty'],
     methods: {
         addToCart() {
+            console.log(this.props);
+
+            let product = {
+                id: this.id, // Change to your product ID property
+            };
+            this.$store.commit('cart/addToCart', product);
+
             this.$refs.messageComponent.showMessageAlert("Item added to cart!");
             this.$store.dispatch('cart/addToCart', {
                 id: this.id,
@@ -58,7 +68,7 @@ export default {
 
         computed: {
             counter() {
-                return this.$store.state.counter;
+                return this.$store.state.counter
             }
 
         },
@@ -80,7 +90,11 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* This ensures it takes up the full viewport height */
+
+}
+
+.nakhoke {
+    background-color: rgb(235, 235, 243);
 }
 </style>
   

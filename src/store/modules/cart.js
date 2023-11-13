@@ -22,6 +22,7 @@ export default {
           title: productData.title,
           image: productData.image,
           price: productData.price,
+          prices: productData.prices,
           qty: 1,
         };
         state.items.push(newItem);

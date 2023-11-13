@@ -4,7 +4,8 @@
             <div class="flex items-center mb-10 "> <!-- Use Flexbox to align the image and text -->
                 <img class="h-10 w-10 mr-4 object-fit" :src="require('@/assets/free.png')" alt="">
                 <!-- Adjust the size with classes -->
-                <h1>Free delivery on orders more than R500. <span class="text-red-400">Get your cool now!</span> </h1>
+                <h1 class="wrapper">Free delivery on orders more than R500. <span class="text-red-400">Get your cool
+                        now!</span> </h1>
             </div>
         </div>
     </div>
@@ -64,6 +65,29 @@ export default {
 .scrolling-text {
     white-space: nowrap;
     animation: scrollTextAnimation linear infinite;
+}
+
+h1 {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #9c58a5 10%, #25abe8 50%, #57d75b 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 </style>
   

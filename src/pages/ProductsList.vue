@@ -3,8 +3,9 @@
   <div class="bg-gray-200">
 
     <div class="grid grid-cols-3 p-40 grid-rows-4 gap-11">
-      <product-item v-for="prod in products" :key="prod.id" :id="prod.id" :SummerVibes="prod.SummerVibes"
-        :image="prod.image" :textFromParent="prod.textFromParent" :wasAmount="prod.wasAmount"></product-item>
+      <product-item class="bg-red" v-for="prod in products" :key="prod.id" :id="prod.id" :SummerVibes="prod.SummerVibes"
+        :image="prod.image" :textFromParent="prod.textFromParent" :WasAmount="prod.WasAmount"
+        :prices="prod.prices"></product-item>
     </div>
   </div>
 </template>

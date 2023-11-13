@@ -8,7 +8,7 @@
                 <div class="font-bold text-[14px] text-left mb-2">{{ SummerVibes }}</div>
                 <div class="text-left text-xs">
                     <span class="line-through">{{ WasAmount }}</span>
-                    <span class="text-green-400">R261.75</span><br />
+                    <span class="text-green-400">{{ prices }}</span><br />
                     25% OFF
                 </div>
                 <StarRating />
@@ -35,6 +35,7 @@ export default {
         childText: String,
         SummerVibes: String,
         WasAmount: String, ///
+        prices: String,
     },
     components: {
         AppButton,

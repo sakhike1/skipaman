@@ -1,5 +1,5 @@
 <template>
-  <div v-if="showMessage" class="message text-xs">
+  <div v-if="showMessage" class="message text-xs rounded-br-lg">
     {{ message }}
   </div>
 </template>
@@ -30,16 +30,15 @@ export default {
 <style scoped>
 .message {
   width: 9%;
-  background-color: #b1b4b1;
+  background-color: #70f07d;
   /* Green */
-  color: white;
+  color: black;
   text-align: center;
   padding: 7px;
   position: fixed;
   bottom: 50px;
   left: 5%;
   transform: translateX(-50%);
-  border-radius: 5px;
   z-index: 9999;
 
 }

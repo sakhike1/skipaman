@@ -22,7 +22,7 @@
                                             <span class="font-semibold">Product name</span>
                                         </div>
                                     </td>
-                                    <td class="py-4">$19.99</td>
+                                    <div class="py-4">{{ prices }}</div>
                                     <td class="py-4">
                                         <div class="flex items-center">
                                             <button class="border rounded-md py-2 px-4 mr-2">-</button>
@@ -36,7 +36,7 @@
                                         </div>
 
                                     </td>
-                                    <td class="py-4">$19.99</td>
+                                    <div class="py-4"></div>
                                 </tr>
                                 <!-- More product rows -->
                             </tbody>
@@ -48,7 +48,7 @@
                         <h2 class="text-lg font-semibold mb-4">Summary</h2>
                         <div class="flex justify-between mb-2">
                             <span>Subtotal</span>
-                            <span>$19.99</span>
+                            <span>{{ WasAmount }}</span>
                         </div>
                         <div class="flex justify-between mb-2">
                             <span>Taxes</span>
@@ -76,7 +76,7 @@
 <script>
 export default {
 
-    props: ["prodId", "title", "image", "price", "qty"],
+    props: ["prodId", "title", "image", "prices", "qty"],
     computed: {
         itemTotal() {
             return (this.price * this.qty).toFixed(2);

@@ -17,7 +17,9 @@ const store = createStore({
   mutations: {
     addToCart(state, product) {
       // Check if the product is already in the cart
-      const existingProduct = state.cartItems.find(item => item.productId === product.productId);
+      const existingProduct = state.cartItems.find(
+        (item) => item.productId === product.productId
+      );
       if (existingProduct) {
         // If it exists, update the quantity
         existingProduct.qty += product.qty;
@@ -25,11 +27,12 @@ const store = createStore({
         // If it doesn't exist, add it to the cart
         state.cartItems.push(product);
       }
-      
     },
     removeFromCart(state, productId) {
       // Remove the product from the cart based on its productId
-      state.cartItems = state.cartItems.filter(item => item.productId !== productId);
+      state.cartItems = state.cartItems.filter(
+        (item) => item.productId !== productId
+      );
     },
   },
   actions: {
@@ -37,10 +40,10 @@ const store = createStore({
       this.count++;
     },
     addProductToCart({ commit }, product) {
-      commit('addToCart', product);
+      commit("addToCart", product);
     },
     removeProductFromCart({ commit }, productId) {
-      commit('removeFromCart', productId);
+      commit("removeFromCart", productId);
     },
   },
   getters: {
@@ -53,8 +56,11 @@ const store = createStore({
     },
     cartTotalPrice(state) {
       // Calculate and return the total price of items in the cart
-      return state.cartItems.reduce((total, item) => total + item.price * item.qty, 0);
-    }
+      return state.cartItems.reduce(
+        (total, item) => total + item.price * item.qty,
+        0
+      );
+    },
   },
 });
 

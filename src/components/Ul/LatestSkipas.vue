@@ -27,6 +27,7 @@
                     <img :src="currentImage" alt="Your Image" class="w-[400px] h-[350px] object-cover" />
                 </div>
             </div>
+            <SpinningText />
         </section>
     </div>
 </template>
@@ -34,12 +35,13 @@
 <script>
 import SalesText from '@/components/Ul/SalesText.vue'
 import InfiniteSlider from '@/components/Ul/InfiniteSlider.vue';
+
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 export default {
     setup() {
         const imageSources = [
-            require('@/assets/nice111.png'),
+            require('@/assets/nice112.png'),
             require('@/assets/nicer11.png'),
             require('@/assets/kpi.png'),
             // Add more image sources as needed
@@ -87,6 +89,7 @@ export default {
     components: {
         SalesText,
         InfiniteSlider,
+
     },
 };
 </script>
@@ -94,6 +97,23 @@ export default {
 <style  scoped>
 .inline-block:hover {
     opacity: 1;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }
 </style>
   

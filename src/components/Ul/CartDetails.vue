@@ -2,7 +2,7 @@
     <div>
         <div class="max-w-sm rounded overflow-hidden shadow-lg" v-for="(image, index) in images" :key="index">
             <router-link :to="getCartDetailsLink(index)">
-                <img class="w-full" :src="image" alt="Card Image" />
+                <img class="w-full" alt="Card Image" />
             </router-link>
             <app-button> </app-button>
             <!-- Rest of your component -->
