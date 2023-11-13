@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 section {
-  margin: 2rem auto;
+
   max-width: 100%;
 }
 

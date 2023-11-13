@@ -1,143 +1,42 @@
 <template>
-    <div
-    id="carouselExampleCaptions"
-    class="relative"
-    data-te-carousel-init
-    data-te-ride="carousel">
-    <div
-      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-      data-te-carousel-indicators>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide-to="0"
-        data-te-carousel-active
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-current="true"
-        aria-label="Slide 1"></button>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide-to="1"
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-label="Slide 2"></button>
-      <button
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide-to="2"
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-label="Slide 3"></button>
-    </div>
-    <div
-      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-      <div
-        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-fade
-        data-te-carousel-item
-        data-te-carousel-active>
-        <video class="w-full" autoplay loop muted>
-          <source
-            src="https://tecdn.b-cdn.net/img/video/Tropical.mp4"
-            type="video/mp4" />
-        </video>
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">First slide label</h5>
-          <p>
-            Some representative placeholder content for the first slide.
-          </p>
-        </div>
-      </div>
-      <div
-        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-fade
-        data-te-carousel-item>
-        <video class="w-full" autoplay loop muted>
-          <source
-            src="https://tecdn.b-cdn.net/img/video/forest.mp4"
-            type="video/mp4" />
-        </video>
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Second slide label</h5>
-          <p>
-            Some representative placeholder content for the second slide.
-          </p>
-        </div>
-      </div>
-      <div
-        class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-te-carousel-fade
-        data-te-carousel-item>
-        <video class="w-full" autoplay loop muted>
-          <source
-            src="https://tecdn.b-cdn.net/img/video/Agua-natural.mp4"
-            type="video/mp4" />
-        </video>
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Third slide label</h5>
-          <p>
-            Some representative placeholder content for the third slide.
-          </p>
+  <section class="relative overflow-hidden">
+    <div class="relative flex items-center justify-center w-full text-center bg-center bg-cover ">
+      <video autoplay muted loop class="video-bg">
+
+
+      </video>
+      <div class="mx-4 p-40">
+        <div class="z-10 max-w-3xl p-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:p-16 opacity-80">
+          <div class="text-center">
+            <h2 class="mb-6 text-4xl font-medium leading-10 tracking-tight text-gray-50 md:text-4xl">
+              Looks like you do not have <br> any item in your cart
+            </h2>
+            <p class="mb-6 tracking-wide text-gray-300 sm:mt-5 sm:text-md sm:max-w-xl sm:mx-auto md:mt-5">
+              subscribe to our email list to receive notification on new arrivals
+            </p>
+            <div class="flex flex-wrap justify-center">
+              <input
+                class="w-full py-3 pl-4 mb-2 text-sm text-gray-900 rounded dark:placeholder-gray-300 dark:text-gray-300 dark:bg-gray-600 md:mb-0 md:w-1/2"
+                type="text" placeholder="Type your e-mail">
+              <button
+                class="w-full px-6 py-3 text-sm font-semibold text-white bg-blue-600 rounded md:w-auto md:ml-2 hover:bg-blue-700">
+                Subscribe</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <button
-      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions"
-      data-te-slide="prev">
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Previous</span
-      >
-    </button>
-    <button
-      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-te-target="#carouselExampleCaptions"
-      data-te-slide="next">
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Next</span
-      >
-    </button>
-  </div>
-  </template>
+    <VideoThree class="h-[300px]" />
+  </section>
+</template>
 
 <script>
+import VideoThree from '@/components/Ul/VideoThree.vue';
 export default {
-
-}
+  components: {
+    VideoThree
+  },
+};
 </script>
 
 <style ></style>
