@@ -7,7 +7,7 @@
         :image="item.image" :price="item.price" :qty="item.qty"></cart-item>
     </ul>
 
-    <NoItem v-else></NoItem>
+    <no-item v-else></no-item>
   </section>
   <router-view />
 </template>

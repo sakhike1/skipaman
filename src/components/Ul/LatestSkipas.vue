@@ -15,7 +15,7 @@
                         </p>
                         <div class="mt-4 sm:mt-8">
                             <a href="#" @click="randomColor"
-                                class="inline-block rounded-full bg-green border border-gray-900   px-4 sm:px-12 py-3 text-sm font-medium hover:text-black hover:border-white transition  ">
+                                class="inline-block rounded-full bg-green border border-gray-900   px-4 sm:px-12 py-3 text-sm font-medium hover:text-white hover:bg-black transition  ">
                                 Get your cool now!
                             </a>
 
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-black">
+                <div class="bg-gradient-to-b from-gray-900 to-gray-600">
                     <img :src="currentImage" alt="Your Image" class="w-[400px] h-[350px] object-cover" />
                 </div>
             </div>

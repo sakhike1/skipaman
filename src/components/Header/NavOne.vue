@@ -22,17 +22,17 @@
 
                     <div
                         class="hidden lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
-                        <a href="#" title=""
+                        <router-link to="/LatestArrival"
                             class="text-base font-medium text-gray-900 transition-all duration-200 rounded  font-pj hover:text-opacity-50">
-                            latest arrival </a>
+                            latest arrival </router-link>
 
                         <a href="#" title=""
                             class="text-base font-medium text-gray-900 transition-all duration-200 rounded  font-pj hover:text-opacity-50 ">
                             Create your own Skipa</a>
 
-                        <a href="#" title=""
+                        <router-link to="/KidsApparel" title=""
                             class="text-base font-medium text-gray-900 transition-all duration-200 rounded  font-pj hover:text-opacity-50">
-                            Kids Apparel </a>
+                            Kids Apparel </router-link>
 
 
                     </div>
